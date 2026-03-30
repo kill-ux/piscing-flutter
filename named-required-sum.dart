@@ -1,4 +1,5 @@
 
 
-int namedRequiredSum({required int a, required int b, required int c}) => a+b+c;
+int namedRequiredSum({required int first, required int second, required int third}) => first+second+third;
+
 
