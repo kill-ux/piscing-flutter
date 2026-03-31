@@ -3,7 +3,7 @@ class Person {
   String? surname;
   String cityOfOrigin;
   int age;
-  int? height;
+  int height;
 
   Person(this.name, this.cityOfOrigin, this.age, this.height, [this.surname]);
 }
