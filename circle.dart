@@ -1,20 +1,13 @@
-
+const pi = 3.14;
 
 class Circle {
-  double _x, _y;
-  double _radius;
+  double _x, _y, _radius;
 
-  Circle({
-    required double x,
-    required double y,
-    required double radius,
-  })  : _x = x,
-        _y = y,
-        _radius = radius;
+  Circle(this._x, this._y, this._radius);
 
-  double get area => 3.14 * _radius * _radius;
+  double get area => pi * _radius * _radius;
 
-  double get perimeter => 2 * 3.14 * _radius;
+  double get perimeter => 2 * pi * _radius;
 
   double get rightMostCoordinate => _x + _radius;
 
@@ -27,5 +20,12 @@ class Circle {
   double get x => _x;
   double get y => _y;
   double get radius => _radius;
+}
+
+
+void main() {
+  final c = Circle(2, 3, 4);
+  print(c.area);                // 3.14 * 16
+  print(c.rightMostCoordinate); // 6
 }
 
